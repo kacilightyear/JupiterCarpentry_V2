@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function imgaction(i, what)
+		{
+			document.getElementById("img-"+i).style.opacity=what;
+		}
+		function imgclick(o, what, words1, words2)
+		{
+			document.getElementById("div-1").style.display=what;
+			document.getElementById("target-table").style.display=what;
+			document.getElementById("target-img0").src="images/"+o+".jpg";
+			document.getElementById("target-img1").src="images/"+o+"1.jpg";
+			document.getElementById("target-img2").src="images/"+o+"2.jpg";
+			document.getElementById("target-img3").src="images/"+o+"3.jpg";
+			document.getElementById("div1-words").innerHTML=words1;
+			document.getElementById("div2-words").innerHTML=words2;
+		}
+	</script>
+	<style>
+	table	{
+			border-spacing:0px;
+			display: inline;
+			}
+	.img-1c	{
+			width:325px;
+			cursor:pointer;
+			display:inline-block;
+			}
+	.td-1	{
+			cursor:pointer;
+			border:15px solid white;
+			text-align:left;
+			font-size:20px;
+			line-height:20px;
+			color:#606060;
+			display:inline-block;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			}
+	</style>
+
+</head>
+<body>
+
+<br><br><br><br>
+<center>
+<table>
+	<tr>
+		
+		<td style="font-family:Bookman Old Style; font-size:180px; vertical-align:top; line-height:130px;">J		</td>
+		<td style="vertical-align:top;">
+			<font style="font-family:Bookman Old Style; font-size:130px; line-height:95px">UPITER</font>
+			<br>
+			<font style="font-family:Bookman Old Style; font-size:37px; line-height:32px">C<font color="white";>..</font>A<font color="white";>..</font>R<font color="white";>..</font>P<font color="white";>..</font>E<font color="white";>..</font>N<font color="white";>..</font>T<font color="white";>..</font>R<font color="white";>..</font>Y</font>
+		</td>
+		<td style="vertical-align:top; align:top;"><center><img src="images/logo.jpg" style="height:125px;"></td>
+		<td width="10px"></td>
+		<td style="vertical-align:bottom; align:bottom; width:35px;"><center><a href="https://www.instagram.com/jupitercarpentry/" 									target="_blank"><img src="images/instagram.jpg"  width="30px"></a></td>
+		<td style="vertical-align:bottom; align:bottom; width:35px;"><center><a href="https://www.facebook.com/JuptierCarpentry"   									target="_blank"><img src="images/facebook.jpg"   width="30px"></td>
+		<td style="vertical-align:bottom; align:bottom; width:35px;"><center><a href="https://www.pinterest.com/jupitercarpentr/?eq=jupiter%20carpentry&etslf=7414" target="_blank"><img src="images/pinterest.jpg"  width="30px"></td>
+	</tr>
+</table>
+<br><br>
+<table><tr>
+
+	<td class="td-1"
+			onmouseover="imgaction('1','0.5')"
+			onmouseout ="imgaction('1','1.0')"
+			onmousedown="imgclick( '4','block','Jupiter Carpentry','Highland Village TX<br>Local, custom, handmade<br>support@jupitercarpentry.com')">
+			<img class="img-1c" src="images/43.jpg" id="img-1" >
+			<br>About Us<br></td>
+	<td class="td-1"
+			onmouseover="imgaction('2','0.5')" 
+			onmouseout ="imgaction('2','1.0')"
+			onmousedown="imgclick('1','block','Europa Vase','Exotic wood with glass inset<br>support@jupitercarpentry.com')">
+			<img class="img-1c" src="images/1.jpg" id="img-2">
+			<br>Europa Vase<br></td>
+</tr></table>
+<table><tr>
+	<td class="td-1" 
+			onmouseover="imgaction('3','0.5')"
+			onmouseout ="imgaction('3','1.0')"
+			onmousedown="imgclick('3','block','Ganymede Light','Contemporary light with red oak base<br>Contact us for options<br>support@jupitercarpentry.com')">
+			<img class="img-1c" src="images/3.jpg" id="img-3">
+			<br>Ganymede Light<br></td>
+	<td class="td-1"
+			onmouseover="imgaction('4','0.5')"
+			onmouseout ="imgaction('4','1.0')"
+			onmousedown="imgclick('9','block','Custom Shelves','Contact us for options support@jupitercarpentry.com')">
+			<img class="img-1c" src="images/9.jpg" id="img-4">
+			<br>Custom Shelves<br></td>
+</tr></table>
+<table><tr>
+	<td class="td-1"
+			onmouseover="imgaction('5','0.5')"
+			onmouseout ="imgaction('5','1.0')"
+			onmousedown="imgclick('7','block','Custom Cabinets','Contact us for options support@jupitercarpentry.com')">
+			<img class="img-1c" src="images/7.jpg" id="img-5">
+			<br>Custom Cabinets<br></td>
+	<td class="td-1"
+			onmouseover="imgaction('8','0.5')"
+			onmouseout="imgaction('8','1.0')"
+			onmousedown="imgclick('2','block','Custom Tables','Contact us for options support@jupitercarpentry.com')">
+			<img class="img-1c" src="images/2.jpg" id="img-8" >
+			<br>Custom Tables<br></td>
+</tr></table>
+<table><tr>
+	<td class="td-1"
+			onmouseover="imgaction('7','0.5')" onmouseout="imgaction('7','1.0')" onmousedown="imgclick('8','block','Custom Desks','Contact us for options support@jupitercarpentry.com')">
+			<img class="img-1c" src="images/8.jpg" id="img-7">
+			<br>Custom Desks<br></td>
+	<td class="td-1"
+			onmouseover="imgaction('6','0.5')" onmouseout="imgaction('6','1.0')" onmousedown="imgclick('6','block','Other Projects','Contact us for options  support@jupitercarpentry.com')">
+			<img class="img-1c" src="images/6.jpg" id="img-6" >
+			<br>Other Projects<br></td>
+</tr></table>
+</body>
+
+<div id="div-1" style="width:100%; height:100%; background-color:#101010; opacity:0.9; position:fixed; top:0; display:none;" onmousedown="imgclick('1','none')"></div>
+
+<table id="target-table" style=" position:absolute; left:29%; top:26%; display:none; background-color:white; vertical-align:top;"><tr><td>
+	<table><tr>
+		<td style="border:20px solid white; border-right:0px solid white; border-bottom:0px solid white;">
+		<img src="images/logo.jpg" style="height:100px; align:right;">
+		</td>
+		<td  style="border:20px solid white; border-bottom:0px solid white; vertical-align:bottom;">
+				<div id="div1-words" style="font-size:26pt"></div>
+				<div id="div2-words" style="font-size:14pt"></div>
+		</td>
+		</tr>
+	</table><br><table><tr>
+		<td style="border:20px solid white;">
+			<img id="target-img0" src="images/4.jpg" style="width:500px"></img>
+		</td>
+		<td>
+			<img id="target-img1" src="images/4.jpg" style="width:156px; border-bottom:10px solid white; border-top:0px solid white; border-right:20px solid white;"></img><br>
+			<img id="target-img2" src="images/4.jpg" style="width:156px; border-bottom:10px solid white; border-top:0px solid white; border-right:20px solid white;"></img><br>
+			<img id="target-img3" src="images/4.jpg" style="width:156px; border-bottom:0px solid white;  border-top:0px solid white; border-right:20px solid white;"></img>
+		</td>
+	</tr></table>
+	</td></tr></table>
+</div>
+</html>
