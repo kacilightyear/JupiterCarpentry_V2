@@ -8,10 +8,6 @@
 		}
 		function imgclick(o, what, words1, words2)
 		{
-			imgclick(o, what, words1, works2, '');
-		}
-		function imgclick(o, what, words1, words2, words3)
-		{
 			document.getElementById("div-1").style.display=what;
 			document.getElementById("target-table").style.display=what;
 			document.getElementById("target-img0").src="images/"+o+".jpg";
@@ -20,10 +16,7 @@
 			document.getElementById("target-img3").src="images/"+o+"3.jpg";
 			document.getElementById("div1-words").innerHTML=words1;
 			document.getElementById("div2-words").innerHTML=words2;
-			if(words3.length>0)
-				document.getElementById("div3-words").innerHTML='<address>Order yours today on our Etsy <a href='+ words3 +' target="_blank">page</a> !</address>';
-			else 
-				document.getElementById("div3-words").innerHTML = '<address><a href="mailto:support@jupitercarpentry.com">support@jupitercarpentry.com</a></address>';
+			document.getElementById("div3-words").innerHTML = '<address><a href="mailto:support@jupitercarpentry.com">support@jupitercarpentry.com</a></address>';
 		}
 	</script>
 	<style>
@@ -82,7 +75,7 @@
 	<td class="td-1"
 			onmouseover="imgaction('3','0.5')" 
 			onmouseout ="imgaction('3','1.0')"
-			onmousedown="imgclick('3','block','Europa Vase','Exotic wood with glass inset','https://www.etsy.com/listing/636365484/single-stem-vase?ref=shop_home_active_3')">
+			onmousedown="imgclick('3','block','Europa Vase','Exotic wood with glass inset<br>Contact us for ordering your today!<br>')">
 			<img class="img-1c" src="images/3.jpg" id="img-3">
 			<br>Europa Vase<br></td>
 </tr></table>
@@ -90,13 +83,13 @@
 	<td class="td-1" 
 			onmouseover="imgaction('A','0.5')"
 			onmouseout ="imgaction('A','1.0')"
-			onmousedown="imgclick('A','block','Europa Vase III','Solid Alder wood with Bolivian Rosewood inlay and three glass vase inserts','https://www.etsy.com/listing/635833942/three-stem-vase?ref=shop_home_active_1')">
+			onmousedown="imgclick('A','block','Europa Vase III','Solid Alder wood with Bolivian Rosewood inlay and three glass vase inserts<br><a href="https://www.etsy.com/listing/635833942/three-stem-vase?ref=shop_home_active_1">See our store for ordering yours today!<br>')">
 			<img class="img-1c" src="images/A.jpg" id="img-A">
 			<br>Europa Vase III<br></td>
 	<td class="td-1"
 			onmouseover="imgaction('C','0.5')"
 			onmouseout ="imgaction('C','1.0')"
-			onmousedown="imgclick('C','block','Wine Rack','Solid Alder wood with reinforced joints and nonslip grips','https://www.etsy.com/listing/635382372/wood-wine-rack?ref=shop_home_active_2')">
+			onmousedown="imgclick('C','block','Wine Rack','Solid Alder wood with reinforced joints and nonslip grips<br>Contact us for ordering your today!<br>')">
 			<img class="img-1c" src="images/C.jpg" id="img-C">
 			<br>Wine Rack<br></td>
 </tr></table>
